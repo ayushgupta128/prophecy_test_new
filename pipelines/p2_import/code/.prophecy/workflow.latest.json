@@ -1,0 +1,212 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.12.3",
+        "pyPiVersion" : "2.1.4"
+      },
+      "sparkConfigJinjaEnabled" : true,
+      "workflowMode" : "batch"
+    },
+    "id" : "1",
+    "uri" : "pipelines/p2_import",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "p2_import",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true,
+      "sparkConfigOptions" : {
+        "disableSparkCreationTimeConfigGeneration" : true
+      }
+    },
+    "language" : "python",
+    "fabricId" : "21998",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "gayushprophecyioteam.tickettestimport1.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "gayushprophecyioteam.tickettest.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ {
+      "name" : "spark.default.parallelism",
+      "value" : "4"
+    }, {
+      "name" : "spark.sql.legacy.allowUntypedScalaUDF",
+      "value" : "true"
+    } ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "61170",
+      "projectName" : "tickettest",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2025-10-14T08:56:41.48843Z",
+        "name" : "plibMaven",
+        "version" : "8.12.3",
+        "id" : "734799861",
+        "createdAt" : "2025-10-14T08:56:41.48843Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2025-10-14T08:56:41.48843Z",
+        "name" : "plibPypi",
+        "version" : "2.1.4",
+        "id" : "25116693",
+        "createdAt" : "2025-10-14T08:56:41.48843Z"
+      } ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "p2_import",
+    "configTopLevelPackage" : "p2_import",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "S29SUelfB5zxJIOd4993I$$qKfwg_lOcYiapZkKG5LM_",
+    "source" : "J3jixre0He3A2zcLrFW3L$$b04XpzrAzQ5zHSFYZY9_s",
+    "sourcePort" : "M66MuitJ7VG0QkltYsiN3$$l7aAbkKbIO0wtJaRQGr_T",
+    "target" : "gk1Z3y8vm1Rj7eG9C-KwH$$SfZXF0QVL3qqAfDLg6Cmg",
+    "targetPort" : "eewm27wkvr4yTU_w-ythx$$2G_UwOUbrxhIESwg9yRxF"
+  } ],
+  "processes" : {
+    "J3jixre0He3A2zcLrFW3L$$b04XpzrAzQ5zHSFYZY9_s" : {
+      "id" : "J3jixre0He3A2zcLrFW3L$$b04XpzrAzQ5zHSFYZY9_s",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "seed",
+        "slug" : "seed",
+        "x" : -800,
+        "y" : -440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "M66MuitJ7VG0QkltYsiN3$$l7aAbkKbIO0wtJaRQGr_T",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "gitUri=https://github.com/ayushgupta128/new_prophecy_projects&subPath=/&tag=tickettest/2.0.0&projectSubscriptionProjectId=61170&path=datasets/seed"
+      }
+    },
+    "gk1Z3y8vm1Rj7eG9C-KwH$$SfZXF0QVL3qqAfDLg6Cmg" : {
+      "id" : "gk1Z3y8vm1Rj7eG9C-KwH$$SfZXF0QVL3qqAfDLg6Cmg",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -660,
+        "y" : -460,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eewm27wkvr4yTU_w-ythx$$2G_UwOUbrxhIESwg9yRxF",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Unique identifier for each record.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "age",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Age of the individual, represented as a string.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "dlvrHPGsmunw5tHFb3bXv$$OEul-CmJOfvXFnfxoev6-",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.49&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
