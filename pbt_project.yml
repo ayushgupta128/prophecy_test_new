@@ -11,20 +11,6 @@ buildSystemDetails:
   author: null
   createdAt: '2025-10-22 06:05:40'
 pipelines:
-  pipelines/p2_import:
-    name: p2_import
-    description: ''
-    author: g.ayush@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2025-10-22 06:05:40'
-    datasets:
-      inputs:
-      - gitUri=https://github.com/ayushgupta128/new_prophecy_projects&subPath=/&tag=tickettest/2.0.0&projectSubscriptionProjectId=61170&path=datasets/seed
-      outputs: []
-    subgraphs: []
-    dependencies: {}
   pipelines/p3_import:
     name: p3_import
     description: ''
@@ -93,6 +79,18 @@ gemContainer:
       gemType: ComponentGem
       dependencies: null
       createdAt: '2025-10-22 09:06:01'
+    gems/test_700:
+      name: test_700
+      category: Custom
+      subCategory: ''
+      description: null
+      author: ayush.779gupta@gmail.com
+      mode: batch
+      files:
+      - gayushprophecyioteam_tickettestimport1/gems/test_700.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2025-10-22 09:15:19'
   dependencies: null
 functions:
   author: null
