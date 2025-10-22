@@ -25,13 +25,38 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/p3_import:
+    name: p3_import
+    description: ''
+    author: ayush.779gupta@gmail.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2025-10-22 06:23:57'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
 gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.4.0
-  gems: {}
+  gems:
+    gems/newGem:
+      name: newGem
+      category: Transform
+      subCategory: ''
+      description: null
+      author: ayush.779gupta@gmail.com
+      mode: batch
+      files:
+      - gayushprophecyioteam_tickettestimport1/gems/newGem.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2025-10-22 06:25:41'
   dependencies: null
 functions:
   author: null

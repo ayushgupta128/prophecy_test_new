@@ -26,14 +26,14 @@
       }
     },
     "language" : "python",
-    "fabricId" : "21998",
+    "fabricId" : "29319",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "gayushprophecyioteam.tickettestimport1.functions",
-      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "gayushprophecyioteam.tickettest.functions" ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -73,24 +73,6 @@
       "projectUID" : "12655",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
-    }, {
-      "projectUID" : "61170",
-      "projectName" : "tickettest",
-      "externalDependencies" : [ {
-        "type" : "plibMaven",
-        "modifiedAt" : "2025-10-14T08:56:41.48843Z",
-        "name" : "plibMaven",
-        "version" : "8.12.3",
-        "id" : "734799861",
-        "createdAt" : "2025-10-14T08:56:41.48843Z"
-      }, {
-        "type" : "plibPypi",
-        "modifiedAt" : "2025-10-14T08:56:41.48843Z",
-        "name" : "plibPypi",
-        "version" : "2.1.4",
-        "id" : "25116693",
-        "createdAt" : "2025-10-14T08:56:41.48843Z"
-      } ]
     } ],
     "isImported" : false,
     "interimMode" : "Full",
@@ -156,30 +138,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "eewm27wkvr4yTU_w-ythx$$2G_UwOUbrxhIESwg9yRxF",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Unique identifier for each record.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "age",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Age of the individual, represented as a string.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
+          "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "dlvrHPGsmunw5tHFb3bXv$$OEul-CmJOfvXFnfxoev6-",
@@ -200,6 +159,31 @@
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.49&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
+    },
+    "StAr-0WRyAFhz-p7NcN9w$$d437_ZOVaf-VVVWzaBm7Q" : {
+      "id" : "StAr-0WRyAFhz-p7NcN9w$$d437_ZOVaf-VVVWzaBm7Q",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -1280,
+        "y" : -720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ttAWCUnrXDHXLIgr9iqkB$$An23vE3LDSNYrsoLo-_l2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
     }
   },
   "ports" : {
@@ -208,5 +192,54 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.J3jixre0He3A2zcLrFW3L$$b04XpzrAzQ5zHSFYZY9_s.properties.path",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "File location cannot be empty",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.gk1Z3y8vm1Rj7eG9C-KwH$$SfZXF0QVL3qqAfDLg6Cmg",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.StAr-0WRyAFhz-p7NcN9w$$d437_ZOVaf-VVVWzaBm7Q.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }
