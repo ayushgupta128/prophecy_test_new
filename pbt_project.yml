@@ -81,6 +81,18 @@ gemContainer:
       gemType: ComponentGem
       dependencies: null
       createdAt: '2025-10-22 07:47:18'
+    gems/test_600:
+      name: test_600
+      category: Custom
+      subCategory: ''
+      description: null
+      author: ayush.779gupta@gmail.com
+      mode: batch
+      files:
+      - gayushprophecyioteam_tickettestimport1/gems/test_600.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2025-10-22 09:06:01'
   dependencies: null
 functions:
   author: null
