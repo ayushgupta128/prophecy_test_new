@@ -4,9 +4,10 @@ from pyspark.sql.types import *
 from p3_import.config.ConfigStore import *
 from p3_import.functions import *
 from prophecy.utils import *
+from p3_import.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    pass
+    df_Deduplicate_1 = Deduplicate_1(spark)
 
 def main():
     spark = SparkSession.builder.enableHiveSupport().appName("p3_import").getOrCreate()

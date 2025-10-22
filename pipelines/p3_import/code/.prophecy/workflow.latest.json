@@ -86,7 +86,13 @@
     "configTopLevelPackage" : "p3_import",
     "configurationVersion" : "v2"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "1M3D6v2vXzC0Y17ZLn4OW$$5_TGjcsDQ0br70t1okTAw",
+    "source" : "bWn4TmHMwfjdsF7HNxbDx$$4tHrUjISD4gwbRLJ3QC5n",
+    "sourcePort" : "TjwubRfA0mkqh1MvvkgEc$$gUsfH1YZiRPKPevankWVt",
+    "target" : "C1Se8_zY9hpZjjyBIsOf_$$zIdrXlFqmx-PYMtKZq6BE",
+    "targetPort" : "kQ9Iq-0e7xGWFo1RNEirO$$pU2cuHGcm18XpokbY1qu9"
+  } ],
   "processes" : {
     "bWn4TmHMwfjdsF7HNxbDx$$4tHrUjISD4gwbRLJ3QC5n" : {
       "id" : "bWn4TmHMwfjdsF7HNxbDx$$4tHrUjISD4gwbRLJ3QC5n",
@@ -112,6 +118,45 @@
         "autoUpdateOnRun" : false
       },
       "properties" : { }
+    },
+    "C1Se8_zY9hpZjjyBIsOf_$$zIdrXlFqmx-PYMtKZq6BE" : {
+      "id" : "C1Se8_zY9hpZjjyBIsOf_$$zIdrXlFqmx-PYMtKZq6BE",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "slug" : "Deduplicate_1",
+        "x" : -360,
+        "y" : -340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kQ9Iq-0e7xGWFo1RNEirO$$pU2cuHGcm18XpokbY1qu9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "KECpXk3RBW64EwSYf9YfQ$$ifMS9xct0t8cCXk050b77",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "any",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.49&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
     }
   },
   "ports" : {
@@ -135,6 +180,38 @@
     },
     "severity" : 1,
     "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.C1Se8_zY9hpZjjyBIsOf_$$zIdrXlFqmx-PYMtKZq6BE",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.C1Se8_zY9hpZjjyBIsOf_$$zIdrXlFqmx-PYMtKZq6BE.properties.dedupColumns",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "At least one rule has to be specified",
     "tags" : [ ],
     "relatedInformation" : [ ]
   } ]
